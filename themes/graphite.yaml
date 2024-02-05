@@ -9,18 +9,18 @@ Graphite:
   # Tokens
   
   # Color tokens
-  token-rgb-primary: 229, 145, 9
+  token-rgb-primary: 189, 147, 249
   token-color-primary: rgb(var(--token-rgb-primary))
   token-color-accent: var(--token-color-primary)
-  token-color-feedback-info: rgb(138, 208, 248)
-  token-color-feedback-warning: rgb(244,180,0)
-  token-color-feedback-error: rgb(229, 97, 128)
-  token-color-feedback-success: rgb(93, 193, 145)
+  token-color-feedback-info: rgb(139, 233, 253)
+  token-color-feedback-warning: rgb(241, 250, 140)
+  token-color-feedback-error: rgb(255, 85, 85)
+  token-color-feedback-success: rgb(80, 250, 123)
   token-color-icon-primary: rgba(228, 228, 231, 1)
   token-color-icon-secondary: rgb(138 140 153)
   token-color-icon-sidebar: rgba(147, 149, 159, 1)
   token-color-icon-sidebar-selected: rgba(174, 176, 183, 1)
-  token-color-text-primary: rgba(228, 228, 231, 1)
+  token-color-text-primary: rgb(248, 248, 242)
   token-color-text-secondary: rgb(138 140 153)
   token-color-text-disabled: rgba(255, 255, 255, 0.5)
   token-color-text-sidebar-selected: rgba(214, 215, 219, 1)
@@ -28,21 +28,18 @@ Graphite:
   token-color-text-label-badge: rgb(198, 203, 210)
   token-color-background-base: rgba(22, 24, 29, 1)
   token-color-background-secondary: rgba(28, 29, 33, 1)
-  token-color-background-sidebar: var(--token-color-background-base)
+  token-color-background-sidebar: rgb(37, 38, 45)
   token-color-background-input-base: rgba(46, 48, 56, 1)
   token-color-background-input-disabled: rgba(37, 37, 40, 0.5)
   token-color-background-label-badge: rgba(54, 55, 67, 1)
   token-color-background-card: rgba(37, 38, 45, 1)
   token-color-background-skrim: rgba(0, 0, 3, 0.9)
-  token-color-background-divider: var(--token-color-background-sidebar)
+  token-color-background-divider: rgb(30, 30, 35)
   token-color-background-scrollbar-thumb: rgba(46, 48, 56, 1)
-  token-color-background-label-badge-red: var(--token-color-feedback-error)
-  token-color-background-label-badge-green: rgba(78, 183, 128, 1)
-  token-color-background-label-badge-blue: var(--token-color-feedback-info)
-  token-color-background-label-badge-yellow: var(--token-color-feedback-warning)
-  token-color-background-label-badge-grey: rgba(83, 90, 103, 1)
   token-color-background-popup-scrim: rgba(4, 5, 7, 0.9)
   token-color-border-card: rgba(0, 0, 0, 0)
+
+  mdc-theme-on-primary: rgb(37, 38, 45)
 
   # Opaciy tokens
   token-opacity-ripple-hover: 0.14
@@ -121,7 +118,7 @@ Graphite:
   secondary-background-color: var(--token-color-background-secondary)
 
   # Navbar
-  app-header-background-color: var(--primary-background-color)
+  app-header-background-color: var(--token-color-background-card)
   app-header-text-color: var(--token-color-icon-primary)
   app-header-edit-background-color: var(--token-color-background-card)
 
@@ -150,14 +147,11 @@ Graphite:
 
   # Label-badge
   label-badge-text-color: var(--token-color-text-primary)
-  label-badge-red: var(--token-color-background-label-badge-red)
-  label-badge-blue: var(--token-color-background-label-badge-blue)
-  label-badge-green: var(--token-color-background-label-badge-green)
-  label-badge-yellow: var(--token-color-background-label-badge-yellow)
-  label-badge-grey: var(--token-color-background-label-badge-grey)
-
-  # Chip
-  ha-chip-text-color: rgb(255 255 255)
+  label-badge-red: rgba(var(--rgb-red-color), 0.5)
+  label-badge-blue: rgba(var(--rgb-blue-color), 0.5)
+  label-badge-green: rgba(var(--rgb-green-color), 0.5)
+  label-badge-yellow: rgba(var(--rgb-yellow-color), 0.5)
+  label-badge-grey: rgba(var(--rgb-grey-color), 0.5)
   
   # Dialog
   mdc-dialog-scrim-color: var(--token-color-background-popup-scrim)
@@ -210,27 +204,52 @@ Graphite:
   codemirror-keyword: rgb(140 169 255)
   codemirror-number: rgb(255 91 29)
 
+  # Colors
+  white-color: rgb(248, 248, 242)
+  pink-color: rgb(255, 170, 218)
+  red-color: rgb(255, 85, 85)
+  light-red-color: rgb(255, 120, 120)
+  purple-color: rgb(218, 193, 253)
+  deep-purple-color: rgb(189, 147, 249)
+  indigo-color: rgb(168, 170, 238)
+  blue-color: rgb(204, 219, 253)
+  light-blue-color: rgb(171, 196, 255)
+  cyan-color: rgb(139, 233, 253)
+  teal-color: rgb(73, 179, 168)
+  green-color: rgb(80, 250, 123)
+  light-green-color: rgb(177, 253, 197)
+  lime-color: rgb(202, 246, 178)
+  yellow-color: rgb(251, 254, 215)
+  amber-color: rgb(241, 250, 140)
+  orange-color: rgb(255, 202, 145)
+  deep-orange-color: rgb(255, 184, 108)
+  brown-color: rgb(223, 199, 167)
+  grey-color: rgb(158, 158, 158)
+  blue-grey-color: rgb(96, 125, 139)
+  black-color: rgb(0, 0, 0)
+
   # RGB colors
   rgb-primary-color: var(--token-rgb-primary)
   rgb-accent-color: var(--token-rgb-primary)
-  rgb-white-color: 240, 243, 255
-  rgb-purple-color: 189, 157, 255
-  rgb-pink-color: 255, 98, 192
-  rgb-red-color: 255, 97, 116
-  rgb-deep-purple-color: 166, 77, 255
-  rgb-indigo-color: 84, 132, 255
-  rgb-blue-color: 33, 150, 243
-  rgb-light-blue-color: 3, 169, 244
-  rgb-cyan-color: 0, 188, 212
-  rgb-teal-color: 107, 255, 237
-  rgb-green-color: 141, 253, 166
-  rgb-light-green-color: 156, 255, 166
-  rgb-lime-color: 205, 220, 57
-  rgb-yellow-color: 255, 235, 59
-  rgb-amber-color: 255, 211, 99
-  rgb-orange-color: var(--rgb-primary-color)
-  rgb-deep-orange-color: 255, 87, 34
-  rgb-brown-color: 121, 85, 72
+  rgb-white-color: 248, 248, 242
+  rgb-pink-color: 255, 170, 218
+  rgb-red-color: 255, 85, 85
+  rgb-light-red-color: 255, 120, 120
+  rgb-purple-color: 218, 193, 253
+  rgb-deep-purple-color: 189, 147, 249
+  rgb-indigo-color: 168, 170, 238
+  rgb-blue-color: 204, 219, 253
+  rgb-light-blue-color: 171, 196, 255
+  rgb-cyan-color: 139, 233, 253
+  rgb-teal-color: 73, 179, 168
+  rgb-green-color: 80, 250, 123
+  rgb-light-green-color: 177, 253, 197
+  rgb-lime-color: 202, 246, 178
+  rgb-yellow-color: 251, 254, 215
+  rgb-amber-color: 241, 250, 140
+  rgb-orange-color: 255, 202, 145
+  rgb-deep-orange-color: 255, 184, 108
+  rgb-brown-color: 223, 199, 167
   rgb-grey-color: 158, 158, 158
   rgb-blue-grey-color: 96, 125, 139
   rgb-black-color: 0, 0, 0
